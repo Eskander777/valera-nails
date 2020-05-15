@@ -1,0 +1,61 @@
+.image-modal {
+  width: 45vw;
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 1vh;
+  left: 28%;
+}
+
+.image-modal > img {
+  width: 100%;
+  position: absolute;
+  z-index: 201;
+}
+
+.examples {
+  text-align: center;
+}
+
+.example {
+  width: 20%;
+  min-width: 15rem;
+  max-width: 22rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.example-image {
+  border-radius: 50%;
+  width: 100%;
+  border: 3px solid #ab4cb8;
+}
+
+.example-image:hover,
+.example-image:active {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 64rem) and (orientation: portrait) {
+  .image-modal {
+    top: 10vh;
+    left: 15vw;
+  }
+
+  .image-modal > img {
+    min-width: 70vw;
+  }
+}
+
+@media (max-width: 29.9rem) {
+  .image-modal {
+    top: 19vh;
+    left: 1%;
+  }
+
+  .image-modal > img {
+    min-width: 98vw;
+  }
+}

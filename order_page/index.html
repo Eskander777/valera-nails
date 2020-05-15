@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../style-shared.css" />
+    <link rel="stylesheet" href="style-order-page.css" />
+    <script src="../shared-script.js" defer></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+      <div class="main-header__brand">
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="../index.html">Главная</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="../examples/index.html"> Примеры работ</a>
+          </li>
+          <li class="main-nav__item">
+            <a
+              href="index.html"
+              style="color: white; background-color: #f7338ecc;"
+            >
+              Записаться сейчас</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="../index.html">Главная</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../examples/index.html">Примеры работ</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="index.html">Записаться сейчас</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <form action="index.html"class="order-form">
+        <label for="last-name">Фамилия</label>
+        <input type="text" id="last-name" />
+        <label for="first-name">Имя</label>
+        <input type="text" id="first-name" />
+        <label for="email">E-mail</label>
+        <input type="email" id="email" />
+        <label for="phone-number">Телефон</label>
+        <input type="tel" id="phone-number" />
+        <button type="submit">Записаться</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul>
+          <li class="main-footer__item"><a href="#">Support</a></li>
+          <li class="main-footer__item"><a href="#">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+#main-showcase {
+  background: url(images/French-Manicure.jpg) top / cover no-repeat;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: top; */
+  width: 100%;
+  height: 80vh;
+}
+
+.main-showcase__name {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.main-showcase__name > h1 {
+  font-family: 'Kaushan Script', cursive;
+  margin: 1.4rem 0;
+  color: #bb509b;
+  font-size: 12vmax;
+  text-shadow: 6px 3px 2px black;
+}
+
+.main-showcase__name > h1:first-of-type {
+  position: relative;
+  right: 50%;
+}
+
+.main-info {
+  padding: 1rem;
+}
+
+.info-card {
+  border-radius: 5%;
+  background: #f7cce0;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.main-info h2 {
+  text-align: center;
+}
+
+.main-info p {
+  margin: 40px;
+}
+
+@media (max-width: 30rem) {
+  .main-showcase__name > h1 {
+    font-size: 10vmax;
+  }
+}
