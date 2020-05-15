@@ -118,6 +118,7 @@ body {
 }
 
 .mobile-nav__item > a {
+  font-weight: bold;
   text-decoration: none;
   color: black;
   border-bottom: 2px solid #f7cce0;
