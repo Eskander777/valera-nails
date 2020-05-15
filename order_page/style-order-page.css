@@ -20,6 +20,11 @@ main {
   width: 100%;
 }
 
+.order-form input:invalid {
+  border-color: red;
+  background-color: lightcoral;
+}
+
 .order-form label {
   margin-top: 1rem;
   font-weight: bold;
@@ -53,4 +58,10 @@ main {
 .order-form button:hover,
 .order-form button:active {
   background-color: #f7338ecc;
+  cursor: pointer;
+}
+
+.order-form button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
