@@ -27,7 +27,7 @@ main {
 
 .order-form label {
   margin-top: 1rem;
-  font-weight: bold;
+  font: bold 1rem sans-serif;
 }
 
 .order-form input {

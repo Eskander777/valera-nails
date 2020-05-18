@@ -14,11 +14,10 @@
 }
 
 .main-showcase__name > h1 {
-  font-family: 'Kaushan Script', cursive;
   margin: 1.4rem 0;
+  font: 600 12vmax 'Kaushan Script', cursive;
   color: #bb509b;
-  font-size: 12vmax;
-  text-shadow: 6px 3px 2px black;
+  text-shadow: 6px 3px 2px #000000;
 }
 
 .main-showcase__name > h1:first-of-type {
@@ -31,8 +30,8 @@
 }
 
 .info-card {
-  border-radius: 5%;
-  background: #f7cce0;
+  border-radius: 2%;
+  background: #fcdeec;
   border: 1px solid black;
   box-shadow: 3px 3px 1px 3px rgba(0, 0, 0, 0.2);
   text-align: justify;
@@ -43,11 +42,17 @@
 }
 
 .main-info p {
-  margin: 40px;
+  margin: 2.5rem;
+  font: 1rem sans-serif;
+  line-height: 1.5;
 }
 
 @media (max-width: 30rem) {
   .main-showcase__name > h1 {
     font-size: 10vmax;
+  }
+
+  .main-info p {
+    margin: 1rem;
   }
 }

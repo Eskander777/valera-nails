@@ -44,9 +44,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 100%;
+  padding: 0 0.375rem;
 }
 
 .toggle-button:focus {
