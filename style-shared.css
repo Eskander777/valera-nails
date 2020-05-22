@@ -29,13 +29,13 @@ body {
   top: 0;
   width: 100%;
   background-color: #f570ae;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__brand {
-  display: inline-block;
-  width: 20%;
   margin-left: 3%;
-  vertical-align: middle;
 }
 
 .toggle-button {
@@ -67,18 +67,16 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: 70%;
-  vertical-align: middle;
+  margin-right: 4rem;
 }
 
 .main-nav__items {
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
+  padding: 0 0.15rem;
 }
 
 .main-nav__item a {
@@ -142,11 +140,11 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-footer__item {
-  display: inline-block;
   padding: 0.6rem 1rem;
 }
 
@@ -174,7 +172,8 @@ main {
     display: none;
   }
 
-  .main-footer__item {
-    display: block;
+  .main-footer ul {
+    flex-direction: column;
+    align-items: center;
   }
 }

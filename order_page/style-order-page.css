@@ -14,8 +14,7 @@ main {
 }
 
 .order-form label,
-.order-form input,
-.order-form button {
+.order-form input {
   display: block;
   width: 100%;
 }
@@ -43,9 +42,13 @@ main {
   border-color: violet;
 }
 
+.order-form__button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .order-form button {
-  margin-top: 1rem;
-  width: 50%;
+  margin-top: 1.5rem;
   padding: 0.5rem;
   background-color: lightcoral;
   border: none;
@@ -53,6 +56,8 @@ main {
   font-weight: bold;
   border-radius: 5px;
   color: white;
+  flex-basis: 11rem;
+  flex-shrink: 0;
 }
 
 .order-form button:hover,
