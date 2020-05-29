@@ -11,6 +11,9 @@ html {
 body {
   margin: 0;
   background-color: #f7cce0;
+  display: grid;
+  grid-template-rows: 3.45rem minmax(86.2vh, auto) fit-content(4rem);
+  grid-template-areas: "header" "main" "footer";
 }
 
 .backdrop {
@@ -127,13 +130,13 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 4.625rem - 3.45rem);
-  margin-top: 3.45rem;
+  grid-area: main;
 }
 
 .main-footer {
   background-color: black;
   padding: 1rem;
+  grid-area: footer;
 }
 
 .main-footer ul {
