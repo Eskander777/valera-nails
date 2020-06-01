@@ -1,10 +1,13 @@
 .image-modal {
+  display: none;
   width: 45vw;
   position: fixed;
-  display: none;
   z-index: 200;
   top: 1vh;
   left: 28%;
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: transform 200ms linear, opacity 200ms linear;
 }
 
 .image-modal > img {
