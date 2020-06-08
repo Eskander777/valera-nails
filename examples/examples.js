@@ -31,7 +31,7 @@ const openNextImage = () => {
 };
 
 const closeImage = () => {
-  if (imageToOpen) {
+  if (imageToOpen && imageModal.firstElementChild === imageToOpen) {
     setTimeout(() => {
       imageModal.removeChild(imageToOpen);
     }, 200);

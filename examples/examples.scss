@@ -1,3 +1,6 @@
+$all-available-space: 100%;
+$opacity-transition-rule: 200ms linear;
+
 .image-modal {
   display: none;
   width: 45vw;
@@ -7,12 +10,13 @@
   left: 28%;
   opacity: 0;
   transform: translateY(-5rem);
-  transition: transform 200ms linear, opacity 200ms linear;
-}
-.image-modal img {
-  width: 100%;
-  position: absolute;
-  z-index: 201;
+  transition: transform 200ms linear, opacity $opacity-transition-rule;
+
+  img {
+    width: $all-available-space;
+    position: absolute;
+    z-index: 201;
+  }
 }
 
 .examples {
@@ -32,10 +36,10 @@
 
 .example-image {
   border-radius: 50%;
-  width: 100%;
+  width: $all-available-space;
   border: 3px solid #ab4cb8;
   opacity: 1;
-  transition: opacity 200ms linear;
+  transition: opacity $opacity-transition-rule;
 }
 
 .example-image:hover,
@@ -48,19 +52,20 @@
   .image-modal {
     top: 10vh;
     left: 15vw;
-  }
-  .image-modal img {
-    min-width: 70vw;
+
+    img {
+      min-width: 70vw;
+    }
   }
 }
+
 @media (max-width: 29.9rem) {
   .image-modal {
     top: 19vh;
     left: 1%;
-  }
-  .image-modal img {
-    min-width: 98vw;
+
+    img {
+      min-width: 98vw;
+    }
   }
 }
-
-/*# sourceMappingURL=style-example.css.map */
