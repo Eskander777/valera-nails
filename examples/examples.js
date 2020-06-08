@@ -60,14 +60,26 @@ const openImage = (event) => {
   backdrop.addEventListener('click', closeImage);
 };
 
-for (let i = 0; i < IMAGES.length; i++) {
+IMAGES.forEach((image) => {
   let exampleDiv = document.createElement('div');
   exampleDiv.className = 'example';
   let imgElem = document.createElement('img');
   imgElem.className = 'example-image';
-  imgElem.src = `images/${IMAGES[i]}`;
+  imgElem.src = `images/${image}`;
   imgElem.alt = '';
   exampleDiv.appendChild(imgElem);
   examples.appendChild(exampleDiv);
   imgElem.addEventListener('click', openImage);
-}
+});
+
+// for (let i = 0; i < IMAGES.length; i++) {
+//   let exampleDiv = document.createElement('div');
+//   exampleDiv.className = 'example';
+//   let imgElem = document.createElement('img');
+//   imgElem.className = 'example-image';
+//   imgElem.src = `images/${IMAGES[i]}`;
+//   imgElem.alt = '';
+//   exampleDiv.appendChild(imgElem);
+//   examples.appendChild(exampleDiv);
+//   imgElem.addEventListener('click', openImage);
+// }
