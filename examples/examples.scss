@@ -1,8 +1,7 @@
 $all-available-space: 100%;
-$opacity-transition-rule: 200ms linear;
+$transition-rule: 200ms linear;
 
 .image-modal {
-  display: none;
   width: 45vw;
   position: fixed;
   z-index: 200;
@@ -10,7 +9,7 @@ $opacity-transition-rule: 200ms linear;
   left: 28%;
   opacity: 0;
   transform: translateY(-5rem);
-  transition: transform 200ms linear, opacity $opacity-transition-rule;
+  transition: transform $transition-rule, opacity $transition-rule;
 
   img {
     width: $all-available-space;
@@ -22,7 +21,6 @@ $opacity-transition-rule: 200ms linear;
 .examples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .example {
@@ -39,7 +37,7 @@ $opacity-transition-rule: 200ms linear;
   width: $all-available-space;
   border: 3px solid #ab4cb8;
   opacity: 1;
-  transition: opacity $opacity-transition-rule;
+  transition: opacity $transition-rule;
 }
 
 .example-image:hover,

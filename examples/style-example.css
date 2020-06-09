@@ -1,5 +1,4 @@
 .image-modal {
-  display: none;
   width: 45vw;
   position: fixed;
   z-index: 200;
@@ -18,7 +17,6 @@
 .examples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .example {
