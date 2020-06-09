@@ -5,7 +5,7 @@ main {
 .order-form {
   background-color: #f7cce0;
   margin: auto;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   width: 40%;
   min-width: 20rem;
   border: 1px solid black;
@@ -15,36 +15,30 @@ main {
   gap: 0.5rem;
   grid-template-columns: 7rem minmax(7rem, auto);
 }
-
-.order-form input:invalid {
-  border-color: red;
-  background-color: lightcoral;
-}
-
 .order-form label {
   font: bold 1rem sans-serif;
   display: flex;
   align-items: center;
 }
-
 .order-form input {
   padding: 0.2rem;
   border: 2px solid #a5a5a5;
   font: inherit;
 }
-
 .order-form input:focus {
   outline: none;
   background-color: #ffddf8;
   border-color: violet;
 }
-
-.order-form__button-container {
-  grid-column: 1 / span 2;
+.order-form input:invalid {
+  border-color: red;
+  background-color: lightcoral;
+}
+.order-form .order-form__button-container {
+  grid-column: 1/span 2;
   display: flex;
   justify-content: center;
 }
-
 .order-form button {
   margin-top: 1.5rem;
   padding: 0.5rem;
@@ -56,13 +50,11 @@ main {
   color: white;
   flex-basis: 15rem;
 }
-
 .order-form button:hover,
 .order-form button:active {
   background-color: #f7338ecc;
   cursor: pointer;
 }
-
 .order-form button[disabled] {
   background-color: #ccc;
   cursor: not-allowed;
@@ -70,6 +62,8 @@ main {
 
 @media (max-width: 40rem) {
   .order-form input {
-    grid-column: 1 / span 2;
+    grid-column: 1/span 2;
   }
 }
+
+/*# sourceMappingURL=style-order-page.css.map */
