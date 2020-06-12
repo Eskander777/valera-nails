@@ -56,6 +56,13 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: map-get($colors, for-text);
+
+    &:hover::after {
+      content: 'Перейти на главную';
+      position: absolute;
+      top: $all-available-space;
+      left: $margin-till-edge;
+    }
   }
 }
 
@@ -93,10 +100,10 @@ body {
   border: none;
   cursor: pointer;
   padding: 0 0.375rem;
-}
 
-.toggle-button:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .toggle-button__bar {
@@ -142,14 +149,17 @@ body {
     color: map-get($colors, for-text);
     font-size: 1.2rem;
   }
-}
 
-.mobile-nav__item:hover,
-.mobile-nav__item:active {
-  background-color: darken(map-get($colors, for-background-and-mobile-nav), 40);
+  &:hover,
+  &:active {
+    background-color: darken(
+      map-get($colors, for-background-and-mobile-nav),
+      40
+    );
 
-  a {
-    color: white;
+    a {
+      color: white;
+    }
   }
 }
 
