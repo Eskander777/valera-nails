@@ -35,9 +35,7 @@
   opacity: 1;
   transition: opacity 200ms linear;
 }
-
-.example-image:hover,
-.example-image:active {
+.example-image:hover, .example-image:active {
   opacity: 0.75;
   cursor: pointer;
 }

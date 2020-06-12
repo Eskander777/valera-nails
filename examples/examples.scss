@@ -38,12 +38,12 @@ $transition-rule: 200ms linear;
   border: 3px solid #ab4cb8;
   opacity: 1;
   transition: opacity $transition-rule;
-}
 
-.example-image:hover,
-.example-image:active {
-  opacity: 0.75;
-  cursor: pointer;
+  &:hover,
+  &:active {
+    opacity: 0.75;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 64rem) and (orientation: portrait) {
